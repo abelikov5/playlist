@@ -1,0 +1,6 @@
+@media (max-width: 800px) {
+  .container, .control .container {
+    width: 100%;
+    padding: 20px;
+  }
+}

@@ -1,0 +1,286 @@
+@import url("fonts/fonts.style.css");
+
+* {
+  font-size: 14px;
+  color: #17252A;
+  font-family: 'Roboto', sans-serif!important;
+}
+h1 {
+  text-align: center;
+  font-size: 28px;
+}
+
+
+/*
+** playlist section
+*/
+
+.playlist {
+  padding: 50px;
+  min-height: 250px;
+}
+
+.playlist .container {
+  width: 600px;
+}
+
+.song_list {
+  width: 100%;
+  height: 45px;
+  margin-top: 5px;
+}
+.song_list .play_btn {
+  position: absolute;
+  z-index: 99;
+  height: 45px;
+  width: 45px;
+  display: none;
+  background-color: rgba(0,0,0,0.5);
+}
+.song_list .play_btn .play_btn_ring {
+  margin: 5px;
+  /* border: rgba(243, 242, 242, 0.8) solid 1px; */
+  background-color: #fff;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  box-shadow: inset 0px 0px 4px rgba(0,0,0,0.5)
+}
+.song_list .play_btn .play_btn_ring div{
+  font-size: 25px;
+  color: #3aafa9;
+  position: absolute;
+  margin: 6px 0 0 7px;
+}
+
+.song_list:hover {
+  /* border: solid 1px #17252A; */
+  background-color: #DEF2F1;
+  cursor: pointer;
+}
+.song_list:hover .play_btn {
+  display: block;
+}
+.song_list_play {
+  background-color: #DEF2F1;
+}
+
+.song_list img {
+  height: 45px;
+  width: 45px;
+  padding-right: 10px;
+}
+
+
+
+
+form {
+  flex-direction: column;
+}
+form input {
+  width: 200px;
+  margin-top: 5px;
+  line-height: 25px;
+}
+.green {
+  color: green;
+}
+
+
+.container {
+  width: 900px;
+  margin: 0 auto;
+}
+
+.head_music {
+  width: 100%;
+  margin-top: 40px;
+}
+
+.d_none {
+  display: none!important;
+}
+
+.d_flex {
+  display: flex;
+}
+.d_center {
+  align-items: center;
+  justify-content: center;
+}
+.d_space {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.wrap_head_music {
+  height: 200px;
+  width: 300px;
+  background-color: #fff;
+}
+
+.head_photo {
+  width: 35%;
+  height: 100%;
+}
+
+.head_photo img, .control_cover img {
+  width: auto;
+  height: 100%;
+}
+
+.head_offer {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.head_offer_descr {
+  width: 280px;
+  text-align: center;
+  font-size: 12px;
+}
+
+/* .head_photo img {
+  width: 100%;
+} */
+
+.wrap_input_file .upload {
+  height: 30px;width:202px;margin:auto;border:1px solid #a9a9a9;
+  cursor:pointer; margin-top: 5px;font-size: 17px;
+}
+
+form .add_track {
+  background: #3aafa9;
+  color: #FEFFFF;
+  border: solid 1px #3aafa9;
+}
+
+.wrap_input_file input{
+  width:.1px;height:.1px;opacity:0;overflow:hidden;position:absolute;z-index:-1;
+}
+
+.wrap_input_file .upload:hover, form input:hover {
+  box-shadow: 0 0 3px 3px rgba(221, 221, 221, 1);
+  color: #000!important;
+}
+
+.wrap_input_file .upload span {
+  margin-right: 5px;
+}
+
+#ph {
+  display: block;
+  text-align: center;
+}
+
+.wrap_control_mp3 {
+  height: 50px;
+  padding: 10px 0 0 10px;
+}
+
+.arrow_left {
+  margin-right: 10px;
+}
+.arrow_right {
+  margin-left: 10px;
+}
+.arrow_right span, .arrow_left span, .icon-play3, .icon-pause2, .control .control_upload .icon-eject{
+  cursor: pointer;
+  font-size: 25px;
+  color: rgba(35, 177, 151, .7);
+}
+.i-pause2 {
+  font-size: 22px!important;
+  margin-left: 0!important;
+}
+
+
+.mp3_play {
+  width: 30px;
+  height: 30px;
+  border: solid 1px #3aafa9;
+  border-radius: 50%;
+  /* margin-top: 20px; */
+  cursor: pointer;
+  /* box-shadow: inset 0px 0px 4px rgba(35, 177, 151, .7); */
+}
+.mp3_play div {
+  font-size: 25px;
+  margin-left: 5px;
+}
+
+.mp3_play div:hover, .arrow_left span:hover, .arrow_right span:hover, .control .control_upload .icon-eject:hover{
+  color: #3aafa9;
+}
+
+.prog_full {
+  width: 100%;
+  height: 10px;
+  border: solid 1px #DEF2F1;
+  background:#DEF2F1;
+
+  margin: 0 auto;
+  cursor: pointer;
+
+}
+
+.prog_cur {
+  width: 0%;
+  height: 100%;
+  background:#3aafa9;
+
+
+}
+
+/*
+** control section
+*/
+
+.control {
+  width: 100%;
+  height: 90px;
+  bottom: 0;
+  background: rgba(243, 242, 242, 0.8);
+  z-index: 999;
+  position: fixed;
+  box-shadow: inset 0px 0px 7px rgba(0,0,0,0.5);
+}
+
+.wrap_control_mp3 .control_cover {
+  width: 35px;
+  height: 35px;
+  margin-left: 10px;
+}
+.wrap_control_mp3 .song_name {
+  height: 35px;
+  width: 60%;
+  margin: 20px 0 0 30px;
+}
+.playlist_song_name {
+  width: 70%;
+}
+.song_duration {
+  margin-right: 30px;
+}
+
+
+/*
+** Modul windows to upload files
+*/
+
+.modul_win {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 9999;
+}
+
+/*
+** Media css
+*/
